@@ -7,9 +7,11 @@
 */
 
 body {
-  background-color: #4B7399;
-  font-family: Verdana, Helvetica, Arial;
+  background-color: #999999;
+  background-image: url(<%= asset_path 'backgrounds/black-linen.png' %>);
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
   font-size: 14px;
+  color: #000000;
 }
 
 a img {
@@ -17,7 +19,7 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: #000033;
 }
 
 .clear {
@@ -29,10 +31,12 @@ a {
 #container {
   width: 75%;
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: #ffffe7;
   padding: 20px 40px;
   border: solid 1px black;
   margin-top: 20px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 #flash_notice, #flash_error, #flash_alert {

@@ -1,0 +1,17 @@
+<% title "Deals" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for deal in @deal_reports %>
+    <tr>
+      <td><%= deal.name %></td>
+      <td><%= link_to "Show", deal %></td>
+      <td><%= link_to "Edit", edit_deal_path(deal) %></td>
+      <td><%= link_to "Destroy", deal, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Deal", new_deal_path %></p>

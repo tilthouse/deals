@@ -1,4 +1,10 @@
 Deals::Application.routes.draw do
+  resources :deal_reports
+
+  resources :api_keys
+
+  resource :home, :only => [:index]
+
   devise_for :users
 
   # The priority is based upon order of creation:

@@ -1,0 +1,12 @@
+<% title "Deal" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @deal_report.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_deal_path(@deal_report) %> |
+  <%= link_to "Destroy", @deal_report, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", deals_path %>
+</p>
